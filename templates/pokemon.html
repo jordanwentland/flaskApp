@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %}
+<div class="text-center rounded" style="background-image: url('https://wallpaperaccess.com/full/1089608.png'); background-size: cover; ">
+    <br>
+  <h1 class="border-0 text-dark">{{ poke_name }}{{ poke_shiny }}</h1>
+  <h2 class="text-dark">{{ poke_id }}</h2>
+  <img src={{ poke_img }} />
+</div>
+{% endblock %}
