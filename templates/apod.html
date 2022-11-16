@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<div class="row">
+  <div class="col-9"><h3>{{apod_title}}</h3></div>
+  <div class="col-4">
+    <img src={{ apod_img }} style="max-width: 100%; max-height: 100%" />
+  </div>
+  <div class="col-6">{{apod_desc}}<br><i>copyright: {{apod_credit}}</i></div>
+</div>
+{% endblock %}
